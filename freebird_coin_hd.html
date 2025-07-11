@@ -6,25 +6,23 @@
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
     html, body {
-      margin: 0;
-      height: 100%;
-      background-color: #eee;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    model-viewer {
-      width: 100vw;
-      height: 100vh;
-      background-color: white;
-    }
+  margin: 0;
+  height: 100%;
+  background: #eee;
+}
+model-viewer {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
   </style>
 </head>
 <body>
   <model-viewer 
     src="https://raw.githubusercontent.com/LeoneDesigns/feature-props/main/freebird_coin_hd.glb"
     alt="Freebird Coin HD"
+    loading="lazy"
+    reveal="interaction"
     auto-rotate
     camera-controls
     shadow-intensity="1"
