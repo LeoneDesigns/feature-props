@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Charlotte Tilbury Coin – Leone Amurri</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f8f8f8;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      width: 100%;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    model-viewer {
+      width: 100%;
+      max-width: 600px;
+      height: 500px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .text {
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #9146ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <model-viewer 
+      src="https://raw.githubusercontent.com/LeoneDesigns/feature-props/main/charlotte_tilbury_coin.glb" 
+      alt="Charlotte Tilbury Coin"
+      auto-rotate 
+      camera-controls 
+      shadow-intensity="1"
+      ar>
+    </model-viewer>
+
+    <div class="text">
+      <h1>Charlotte Tilbury Coin</h1>
+      <p><strong>Client:</strong> Charlotte Tilbury (Demo Proposal)</p>
+      <p>This digital token was created as part of a branded campaign proposal for Charlotte Tilbury. It was optimized for real-time rendering and interactive AR use on 8th Wall.</p>
+      <p><strong>Format:</strong> glTF (.glb)<br>
+         <strong>Polycount:</strong> ~1.8k tris<br>
+         <strong>Texture Size:</strong> 512px</p>
+      <p><a href="index.html">← Back to Asset Gallery</a></p>
+    </div>
+  </div>
+</body>
+</html>
