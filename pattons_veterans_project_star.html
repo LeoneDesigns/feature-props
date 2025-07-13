@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pattons Veterans Project Star</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer 
+    src="https://raw.githubusercontent.com/LeoneDesigns/feature-props/main/pattons_veterans_project_star.glb"
+    alt="Pattons Veterans Project Star"
+    poster="https://raw.githubusercontent.com/LeoneDesigns/feature-props/main/pattons_veterans_star_thumbnail.webp"
+    loading="lazy"
+    auto-rotate
+    camera-controls
+    shadow-intensity="1"
+    ar>
+  </model-viewer>
+</body>
+</html>
